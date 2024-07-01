@@ -34,7 +34,9 @@ function Card({
       >
         <ul className="text-[#4D5562]  flex gap-3 font-bold items-center">
           {item1 && (
-            <li className="px-3 py-2 rounded-xl hover:bg-[#4D5562] hover:text-[#F9FAFB]">
+            <li
+              className={`px-3 py-2 rounded-xl hover:bg-[#4D5562] hover:text-[#F9FAFB] sm:block hidden`}
+            >
               {item1}
             </li>
           )}
