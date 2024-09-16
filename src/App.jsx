@@ -46,8 +46,8 @@ function App() {
   };
   return (
     <>
-      <img src={logo} alt="img" class="sm:m-8 m-1 sm:h-[70px] " />
-      <div class="flex flex-wrap w-screen flex-grow flex-shrink basis-16 lg:flex-row flex-col gap-4 h-auto justify-center items-center p-4">
+      <img src={logo} alt="img" className="sm:m-8 m-1 sm:h-[70px] " />
+      <div className="flex flex-wrap w-screen flex-grow flex-shrink basis-16 lg:flex-row flex-col gap-4 h-auto justify-center items-center p-4">
         <Card
           item1={"Detect Language"}
           ontextchange={(text) => {

@@ -17,7 +17,7 @@ function Card({
   const copy = () => {
     navigator.clipboard
       .writeText(textref.current.value)
-      .then(() => console.log("text copied to clipboard", textref.current))
+      .then(() => console.log("text copied to clipboard"))
       .catch((error) => console.log(error));
     textref.current.select();
   };
@@ -26,7 +26,7 @@ function Card({
     window.speechSynthesis.speak(utterance);
   };
   return (
-    <div className="bg-[#121826cc] p-[1.1rem] border lg:min-w-[30vw] lg:w-[40vw] min-w-full border-[#4D5562] h-[35vh] rounded-3xl flex flex-col gap-2 items-center">
+    <div className="bg-[#121826cc] p-[1.1rem] border lg:min-w-[30vw] lg:w-[40vw] min-w-full border-[#4D5562] sm:h-[45vh] h-[40vh] rounded-3xl flex flex-col gap-2 items-center">
       <div
         className={`w-full px-1 py-2 border-b-[1px] border-[#4D5562] text-[0.875rem] ${
           item1 ? "" : "flex justify-between"
